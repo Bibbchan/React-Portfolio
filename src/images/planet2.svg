@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="planet2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 325 325"><defs>
+<style>.planet2-cls-1{fill:url(#radial-gradient);}.planet2-cls-2{fill:#ffe9b1;}.planet2-cls-3{fill:#fffaf0;}.planet2-cls-4{fill:#b28a6f;}</style>
+<radialGradient id="radial-gradient" cx="162.5" cy="162.5" fx="162.5" fy="162.5" r="162.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffe9b1" stop-opacity=".74"/><stop offset=".54" stop-color="#ffe9b1" stop-opacity=".33"/><stop offset="1" stop-color="#ffe9b1" stop-opacity="0"/></radialGradient>
+</defs><circle class="planet2-cls-1" cx="162.5" cy="162.5" r="162.5"/><circle class="planet2-cls-2" cx="161.96" cy="162.24" r="101.5"/><path class="planet2-cls-4" d="M160.24,211.86c-52.06-13.75-83.94-65.53-73.69-117.63-10.48,11.62-18.43,25.85-22.7,42.02-14.31,54.2,18.03,109.74,72.22,124.05,54.2,14.31,109.74-18.03,124.05-72.22,.56-2.14,1.05-4.28,1.47-6.41-24.64,27.32-63.33,40.24-101.35,30.2Z"/><circle class="planet2-cls-3" cx="198.5" cy="101.5" r="12"/></svg>
