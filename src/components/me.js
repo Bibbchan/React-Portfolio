@@ -258,8 +258,8 @@ const IconImg = styled.div`
           setSkatesImagePositionX(5);
           setSkatesImagePositionY(2);
           
-          setWandImagePositionX(15);
-          setWandImagePositionY(20);
+          setWandImagePositionX(18);
+          setWandImagePositionY(31);
   
           setDrawImagePositionX(20)
           setDrawImagePositionY(10)
@@ -403,12 +403,12 @@ const IconImg = styled.div`
           </CSSTransition>
            <CSSTransition in={showTxtDiv} timeout={300} classNames="pop-up" unmountOnExit>
             <div className="hobbies-txt">
-              <div >
-                {showTxt && <span className="typewriter">{txt}</span>}
-                {showControllerTxt && <span className="typewriter">Whether I'm exploring virtual worlds or competing with friends, gaming brings me joy and entertainment.</span>}
-                {showDrawTxt && <span className="typewriter">I love being creative. Illustrating or drawing gives me a break from annoying code that won't run </span>}
-                {showWandTxt && <span className="typewriter">Whether it's through books, movies, or games, I love immersing myself in fantastical realms</span>}
-                {showSkateTxt && <span className="typewriter">I have been figure skating for 8 years, and it's still something I love doing in my free time.</span>}
+              <div className="hobbies-p">
+                {showTxt && <span className="typewriter" style={{"--n":22}}>{txt}</span>}
+                {showControllerTxt && <span className="typewriter" style={{"--n":102}}>Whether I'm exploring virtual worlds or competing with friends, gaming brings me joy and entertainment.</span>}
+                {showDrawTxt && <span className="typewriter" style={{"--n":98}}>I love being creative. Illustrating or drawing gives me a break from annoying code that won't run </span>}
+                {showWandTxt && <span className="typewriter" style={{"--n":91}}>Whether it's through books, movies, or games, I love immersing myself in fantastical realms</span>}
+                {showSkateTxt && <span className="typewriter" style={{"--n":94}}>I have been figure skating for 8 years, and it's still something I love doing in my free time.</span>}
               
               </div>
         </div></CSSTransition>

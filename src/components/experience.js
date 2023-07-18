@@ -123,15 +123,17 @@ const Experience =()=>{
                 
                   <div className='exp-txt-content' >
                   <Fade >
+                  <div>
                   <h1 className="title-subpage">My Skills & Experience</h1>
-                  <p className='p-sub-title-subpage'>Java Developer with Frontend Focus</p>
-                  <p className='p-subpage'>I have strong skills in Java development and a keen interest in frontend work. 
+                  <p className='p-sub-title-subpage'>Java Developer with Frontend Focus</p></div>
+                  <div className='exp-bottom'> <p className='p-subpage'>I have strong skills in Java development and a keen interest in frontend work. 
                   In school, I learned React.js and got hands-on experience with the Spring framework. 
                   I also explored Three.js in my free time and became familiar with Vaadin for my final exam. <br/>
                   <br/>Additionally, I enjoy being creative, and I love using Adobe Photoshop for drawing and Adobe Illustrator for illustrations. 
                   I bring a blend of coding expertise and artistic creativity to any project, making me well-suited for the intersection of Java and frontend development.<br/>
                   <br/>Download my CV to see more details about my skills and experience :</p>
-                    <button className='btn2' onClick={onButtonClick} > CV <AiOutlineDownload className='download-icon'/></button>
+                    <button className='btn2' onClick={onButtonClick} > CV <AiOutlineDownload className='download-icon'/></button></div>
+                 
                     </Fade>
                   </div>
                  

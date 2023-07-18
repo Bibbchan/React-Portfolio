@@ -36,10 +36,11 @@ const MainPage = ()=> {
           </nav>
         </header>
         <main>
+        <Fade>
           <div className='main'>
-            
+          
           <div className='interduction'>
-          <Fade>
+          
           <div>
             <h1 className='title'>Hi! I'm Vivienne </h1>
           </div>
@@ -55,9 +56,10 @@ const MainPage = ()=> {
             <button className='btn1'>Contact</button>
             </a>
           </div>
-          </Fade>
+          
           </div>
-          <Fade>
+          
+        
           <div className='parent'>
           
           <div className='div_plant2'><Plant2 className='plant2'/></div>
@@ -72,8 +74,9 @@ const MainPage = ()=> {
           <div className='div_headset'><Headset className='headset'/></div>
           
           </div>
-          </Fade>
+          
       </div>
+      </Fade>
         </main>
       </Section>
       

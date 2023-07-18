@@ -22,11 +22,8 @@ const Contact =()=>{
                 <img src= {footerPlant1} alt="plant" className="footer-plant-px" />
                 <img src= {footerPlant2} alt="plant" className="footer-plant-px"/>
                 </div>
-                <p className="contact-p">If you would like to get in contact me:</p>
-                <div className="contact-p2-div"><p className="contact-p2">Lorem ipsum dolor sit amet, 
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                At vero eos et accusam et.</p></div>
+                <p className="contact-p">If you'd like to contact me:</p>
+                <div className="contact-p2-div"><p className="contact-p2">Please contact me via email or telephone. I'm looking forward to hearing from you! :)</p></div>
                 
             </div >
             <div className="footer-icons">
