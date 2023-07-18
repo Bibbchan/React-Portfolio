@@ -23,6 +23,7 @@ flex-direction: column;
 position:relative;
 sroll-behavior: smooth;
 z-index:1;
+overflow:hidden;
 
 
 `

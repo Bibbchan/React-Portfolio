@@ -11,6 +11,7 @@ height : 40vh;
 scroll-snap-align: center;
 background-color: #110c2d;
 position:sticky;
+overflow:hidden;
 `
 
 const Contact =()=>{

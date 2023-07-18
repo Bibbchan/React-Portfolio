@@ -19,6 +19,7 @@ font-family: Montserrat;
 scroll-snap-align: center;
 position:relative;
 z-index:2;
+overflow:hidden;
 
 `
 
