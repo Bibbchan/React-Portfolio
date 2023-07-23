@@ -9,7 +9,7 @@ import {AiOutlineGitlab} from 'react-icons/ai'
 const Section = styled.div`
 height : 40vh;
 scroll-snap-align: center;
-background-color: #110c2d;
+background-color: rgb(11, 8, 28);
 position:sticky;
 overflow:hidden;
 `

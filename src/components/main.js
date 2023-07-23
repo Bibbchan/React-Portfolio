@@ -32,7 +32,7 @@ const MainPage = ()=> {
             <ul>
               
               <li><a href="#experience-section">Experience</a></li>
-              <li><a href="#about-me-section">About Me</a></li>
+              <li><a className='about-me-li' href="#about-me-section">About ME</a></li>
             </ul>
           </nav>
         </header>
@@ -41,12 +41,14 @@ const MainPage = ()=> {
           <div className='main'>
           
           <div className='interduction'>
-          
+          <div className='headings'>
           <div>
             <h1 className='title'>Hi! I'm Vivienne </h1>
           </div>
           <div className='subtitle-div'>
-            <p className='subtitle'>Aspiring Developer & Artist :)</p>
+            <div className='div_star'><Star className='starSub'/></div>
+            <p className='subtitle'>ASPIRING DEVELOPER & ARTIST</p>
+          </div>
           </div>
           <div className='interduction-txt-div'>
             <p className='interduction-text'>Since completing my apprenticeship this year im looking forward to getting to know the IT industry and improving my skills as a developer. 

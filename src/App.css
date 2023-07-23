@@ -3,7 +3,8 @@
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
 nav ul {
@@ -11,17 +12,20 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 10%;
 }
 
-nav li {
-  margin-left: 1rem;
-}
+
 
 nav a {
-  color: rgba(255, 255, 255, 0.521);
-  text-decoration: none;
-}
+  color: #e5c7e2c0;
+  text-decoration: underline;
+font-weight: bold;
 
+}
+.about-me-li{
+  padding-left: 50px;
+}
 main {
   margin-top: 2rem;
 }
@@ -72,15 +76,20 @@ button:hover {
 		transform: translatey(0px);
 	}
 }
-.title{
-  color: white;
-  font-size: 50px;
-  margin-bottom: 0px;
+
+.title {
+	color: white;
+	font-size: 56px;
+	margin-bottom: 0px;
+	font-weight: normal;
+	padding-bottom: 16px;
 }
 
-.subtitle{
-  color:white;
-  font-size: 20px;
+.subtitle {
+	color: #B69DF4;
+	font-size: 24px;
+	font-style: italic;
+  margin:0px
 }
 .plant1{
   width: 100px;
@@ -167,6 +176,7 @@ button:hover {
   .interduction-text{
     color:white;
     padding-bottom: 20px;
+    line-height: 31px;
   }
   .interduction-txt-div{
     padding-right: 30%;
@@ -179,13 +189,28 @@ button:hover {
   margin:auto;
 
   }
-  
+  .planet-sub{
+    height:40px;
+    padding-right: 10px;
+  }
+  .planet-sub-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
   .planet2{
     height: 150px;
     object-fit: contain;
   position: relative;
   margin:auto;
 
+  }
+
+  .starSub{
+  
+    height: 40px;
+   
+    animation: animateStar 4s infinite ease alternate;
   }
 
   .star{
@@ -261,16 +286,16 @@ button:hover {
 	}
 }
 .btn1 {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  background-color:#232163;
-  padding: 15px 40px;
-  border-radius: 30px;
-  font-family: Montserrat;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
-  margin-right: 15px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: #a790e38c;
+	padding: 10px 46px;
+	border-radius: 30px;
+	font-family: Montserrat;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	margin-right: 15px;
 }
 .btn1:hover {
   color: #232163;
@@ -280,9 +305,9 @@ button:hover {
 
 .btn2 {
   text-decoration: none;
-  color: #cebbff;
-  background-color:#3b348660;
-  padding: 15px 40px;
+  color: #110c2d;
+  background-color:#FFE9B1BA;
+  padding: 10px 46px;
   border-radius: 30px;
   font-family: Montserrat;
   font-weight: bold;
@@ -338,9 +363,10 @@ align-items: center;
   
   }
 .title-subpage{
-  color: #3b3486;
-  font-size: 40px;
+  color: #ffffff;
+  font-size: 43px;
   font-family: Montserrat;
+  font-weight: normal;
 }
 .reactlogo{
   height: 40px;
@@ -356,15 +382,15 @@ align-items: center;
 }
 @keyframes circle1 {
   0%{
-    transform:rotate(0deg)
-              translate(-200px)
+    transform:rotate(360deg)
+              translate(-250px)
               rotate(0deg)
 
   }
   100%{
-    transform:rotate(360deg)
-              translate(-200px)
-              rotate(720deg)
+    transform:rotate(0deg)
+              translate(-250px)
+              rotate(0deg)
 
   }
 }
@@ -385,7 +411,10 @@ align-items: center;
   position: relative;
   width: 60vw;
   height:100vh;
-  background: radial-gradient(circle, rgba(255,233,177,1) 0%, rgba(182,157,244,1) 44%);
+  background-color: #4B3080;
+}
+.brainImg{
+  height: 32vh;
 }
 
 .springlogo{
@@ -465,8 +494,8 @@ align-items: center;
   }
 }
 .reactCircle{
-  width:400px;
-  height:400px;
+  width:500px;
+  height:500px;
   border:1px solid #f8ffdf63;
   position:absolute;
   border-radius:50%; 
@@ -515,8 +544,8 @@ align-items: center;
   justify-content: center;
 }
 .cssCircle{
-  width:700px;
-  height:700px;
+  width:800px;
+  height:800px;
   border:1px solid #f8ffdf2d;
   position:absolute;
   border-radius:50%; 
@@ -525,8 +554,8 @@ align-items: center;
   justify-content: center;
 }
 .javaCircle{
-  width:950px;
-  height:950px;
+  width:800px;
+  height:800px;
   border:1px solid #f8ffdf2d;
   position:absolute;
   border-radius:50%; 
@@ -557,16 +586,17 @@ align-items: center;
 }
 @keyframes circlePlanet2 {
   0%{
-    transform:rotate(360deg)
-              translate(-400px)
-              rotate(65deg)
+    transform:rotate(720deg)
+              translate(-300px)
+              rotate(720deg)
+              
            
   
   }
   100%{
     transform:rotate(0deg)
-              translate(-400px)
-              rotate(65deg)
+              translate(-300px)
+              rotate(0deg)
               
   }
 }
@@ -652,6 +682,9 @@ align-items: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
+  display: flex;
+justify-content: center;
+
 }
 .hobbies-txt{
   width: 40vw;
@@ -674,7 +707,7 @@ align-items: center;
 }
 @keyframes blinker {
   50% {
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 
@@ -713,11 +746,11 @@ align-items: center;
   50% {background-position:0 -100%,0 0}
 }
 .icon-transition-enter{
-  transform: translateY(100%);
+  transform: opacity(0);
 }
 .icon-transition-enter-active{
-  transform: translateY(0);
-  transition: transform 400ms;
+  transform: opacity(1);
+  transition: transform 1000ms;
 }
 .contact-p{
   font-family: Montserrat;
@@ -775,16 +808,121 @@ align-items: center;
 }
 
 .p-subpage{
-  color: #110c2d;
+
   font-family: Montserrat;
-  padding-bottom: 20px;
+	color: white;
+	padding-bottom: 20px;
+	line-height: 31px;
 }
+
 .p-sub-title-subpage{
-  color: #110c2d;
+  color: #FFE9B1;
   font-size: 20px;
+  font-style: italic;
 
 }
+.hobbies-p{
+
+  text-align: center;
+}
+.subtitle-div{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hobbiesStats-div{
+
+  height: 50vh;
+  width: 20vw;
+  margin-bottom: 15vh;
+}
+.skills-div{
+
+  height: 50vh;
+  width: 20vw;
+  margin-bottom: 15vh;
+}
+.hobbiesStats-div-border{
+  border: 3px solid white;
+  height: 50vh;
+  width: 20vw;
+}
+.hobbies-p-stats{
+  color: wheat;
+  text-decoration: underline;
+  font-family: VT323;
+  font-size: 25px;
+  margin-top: 0px;
+  text-align: right;
+  z-index: 5;
+  animation: blinker 1s linear infinite;
+ 
+}
+.hobbies-p-stats:hover{
+  cursor: pointer;
+}
+.skills-p-stats{
+  color: wheat;
+  text-decoration: underline;
+  font-family: VT323;
+  font-size: 25px;
+  margin-top: 0px;
+  z-index: 5;
+  animation: blinker 1s linear infinite;
+
+}
+.skills-p-stats{
+  cursor: pointer;
+}
+.stats-div{
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+ 
+}
+.skills-p{
+  color: wheat;
+  font-family: VT323;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 2px;
+  margin-bottom: -20px;
+}
+.hobbies-p{
+  color: wheat;
+  font-family: VT323;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+.icon-hobbies{
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.hobby-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heart{
+  height: 20px;
+  padding-left: 10px;
+}
+.skill-meter-img{
+  width: 15vw;
+  margin-bottom: -30px;
+  padding-left: 20px;
+}
+  
 /* Styles for mobile */
+::-webkit-scrollbar { display: none; }
 
 @media (max-width: 768px) {
  
@@ -804,8 +942,9 @@ align-items: center;
     
   }
   .hobbies-p{
-    width: 80vw;
-    text-align: center;
+    width: max-content;
+    padding: 0px;
+    text-align: left;
   }
   .canvas{
     position: relative;
@@ -814,7 +953,7 @@ align-items: center;
   .exp-txt-content{
     position:relative;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -834,9 +973,9 @@ align-items: center;
     padding:0px;
   }
   .brain{
-    width: 100vw;
-    margin-bottom: 20vh;
+    display: none;
   }
+
   .svg{
     height: 330px;
   }
@@ -846,32 +985,25 @@ align-items: center;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .div_svg{
-    grid-area: 2 / 3 / 4 / 4;
+    grid-area: 2/ 3 / 5 / 4;
   }
   .subtitle-div{
     padding-bottom: 39vh;
+    display:flex;
+    flex-direction: row;
+
+    
   }
   .title{
     margin-top: 0px;
   }
-  .div_plant1 {
-    grid-area: 2 / 2 / 4 / 3;
-  }
-  .div_headset {
-    grid-area: 4 / 2 / 4 / 6;
-  }
-  .div_planet1 {
-    grid-area: 4 /4 / 3 /4;
-  }
+
   .interduction-txt-div {
-    padding-right: 0%;
-    z-index: 100;
-    backdrop-filter: blur(2px);
-    padding: 10px;
-    border-radius: 5p0x;
+
+    display: none;
   }
   .div_star3 {
     grid-area: 2/ 5 / 4/ 4;
@@ -886,12 +1018,12 @@ align-items: center;
     width: 80%;
     align-self: center;
     justify-content: center !important;
-    margin-bottom: 3vh;
+    margin: 0px;
   }
   .title-subpage{
     
     padding-left: 10vw;
-    padding-top: 2rem;
+
   }
   nav a {
     display: none;
@@ -901,12 +1033,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-  .p-sub-title-subpage{
-    color: #110c2d;
-    font-size: 20px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
+
   .footer-plant-px{
     height: 50px;
   }
@@ -920,8 +1047,121 @@ align-items: center;
   .footer-icons{
     width: 60%;
   }
+  .stats-div {
+    width: 80vw;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 40vh;
+    flex-direction: column;
 
+   
+  }
+  .hobbies-div {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  .icon-hobbies {
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+  .heart{
+    height: 20px;
+  }
+  .icon-hobbies {
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 5px;
 
+  }
+  .skills-p {
+    padding-left: 0px;
+    width: min-content;
+  }
+  .skill-meter-img {
+    width: 27vw;
+    margin-bottom: 0px; 
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  .hobbiesStats-div-border{
+    border:0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  .hobbies-p-stats{
+    text-align: left;
+    width: max-content;
+    animation: none;
+  }
+  #about-me-section{
+    overflow: scroll;
+  }
+  .stars{
+    display: none;
+  }
+  .hobbies-div{
+    width: min-content;
+    margin-bottom: 5vh;
+  }
+  .hobbiesStats-div{
+    width: 80vw;
+    margin-bottom: 6vh;
+    height: min-content;
+  }
+  .skills-div{
+    width: 80vw;
+    height: max-content;
+  }
+  .hobbie-section-div{
+    width: 130px;
+  }
+  .skills-p-stats{
+    animation: none;
+  }
+  .board-div{
+    height: 100vh;
+  }
+  .plant2{
+    width: 50px;
+    height: 90px;
+  }
+  .div_plant2 {
+    grid-area: 3 / 4/ 3 / 6;
+  }
+  .headset {
+    display: none;
+  }
+  .planet1{
+    display: none;
+  }
+  .planet2{
+    display: none;
+  }
+.parent{
+  margin-top: 20vh;
+}
+.planet-sub-div{
+  width: 80vw;
+padding-left: 10vw;
+}
+.div_plant1 {
+	grid-area: 2 /1 / 4 / 3;
+}
+.me{
+  width: 80px !important;
+height: 230px !important;
+background-repeat: no-repeat !important;
+}
 
 }
 /*style for pixel6*/
@@ -945,10 +1185,7 @@ and (max-device-width: 500px){
     height: 20vh;
   }
 
-  .hobbies-p{
-    padding-bottom: 5vh;
-  
-  }
+
   
 }
 /* Styles for small laptops/ tablets */

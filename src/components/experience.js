@@ -9,19 +9,23 @@ import Model from '../Scene';
 import '../App.css';
 import ReactLogo from '../images/react.png';
 import SpringLogo from '../images/spring.png';
-import VaadinLogo from '../images/vaadin.png';
+import Planet3 from '../images/planet_pink.png';
+
 import Planet1 from'../images/planet1.svg'
 import Planet2 from'../images/planet2.svg'
+import Planet4 from'../images/pixel_earth.png'
+import Brain from '../images/brain_full.png'
 import ThreeLogo from '../images/three.png';
 import { AiOutlineDownload} from 'react-icons/ai'
 import { Fade } from "react-awesome-reveal";
+import { ReactComponent as PlanetSub }  from '../images/planet1.svg'
 
 
 const Section = styled.div`
 
 height : 100vh;
 scroll-snap-align: center;
-background-color: #b69df4;
+background-color: #4B3080;
 
 display: flex;
 align-items: center;
@@ -98,24 +102,22 @@ const Experience =()=>{
   const [isShown, setIsShown] = useState(false);
     return (
         <Section id='experience-section'>
+          <Fade >
             <div className="experience">
-
+            
                 <div className="brain">
                   <div className="logos">
-                    <div className="reactCircle"><img  src={ReactLogo} alt="fireSpot" className="reactlogo"         
+                    <div className="reactCircle"><img  src={Planet2} alt="fireSpot" className="reactlogo"         
                     onMouseEnter={() => setIsShown(true)}
                     onMouseLeave={() => setIsShown(false)}></img></div>
-                    <div className="springCircle"><img  src={SpringLogo} alt="fireSpot" className="springlogo"/></div>
-                    <div className="threeCircle"><img  src={ThreeLogo} alt="fireSpot" className="threelogo"/></div>
-                    <div className="vaadinCircle"><img  src={VaadinLogo} alt="fireSpot" className="vaadinlogo"/></div>
-                    <div className="javaCircle"><img  src={Planet2} alt="fireSpot" className="javalogo"/></div>
-                    <div className="htmlCircle"><img  src={Planet1} alt="fireSpot" className="planetlogo"/></div>
-                    <div className="cssCircle"><img  src={VaadinLogo} alt="fireSpot" className="csslogo"/></div>
+
+                    <div className="springCircle"><img  src={Planet4} alt="fireSpot" className="springlogo"/></div>
+                    <div className="javaCircle"><img  src={ReactLogo} alt="fireSpot" className="javalogo"/></div>
+                    <div className="htmlCircle"><img  src={Planet3} alt="fireSpot" className="planetlogo"/></div>
+                    
                   </div>
                 
-                <Canvas className="canvas">
-                    <Globe/>
-                    </Canvas>
+                <img  src={Brain} alt="Brain" className="brainImg"></img>
                   
                 </div>
                 
@@ -123,25 +125,30 @@ const Experience =()=>{
                 
                 
                   <div className='exp-txt-content' >
-                  <Fade >
+                  
                   <div>
                   <h1 className="title-subpage">My Skills & Experience</h1>
-                  <p className='p-sub-title-subpage'>Java Developer with Frontend Focus</p></div>
+                  <div className='planet-sub-div'>
+                  <div ><PlanetSub className='planet-sub'/></div>
+                  <p className='p-sub-title-subpage'>JAVA DEVELOPER WITH FRONTEND FOCUS</p></div>
                   <div className='exp-bottom'> <p className='p-subpage'>I have strong skills in Java development and a keen interest in frontend work. 
                   In school, I learned React.js and got hands-on experience with the Spring framework. 
                   I also explored Three.js in my free time and became familiar with Vaadin for my final exam. <br/>
-                  <br/>Additionally, I enjoy being creative, and I love using Adobe Photoshop for drawing and Adobe Illustrator for illustrations. 
-                  I bring a blend of coding expertise and artistic creativity to any project, making me well-suited for the intersection of Java and frontend development.<br/>
                   <br/>Download my CV to see more details about my skills and experience :</p>
-                    <button className='btn2' onClick={onButtonClick} > CV <AiOutlineDownload className='download-icon'/></button></div>
+                    
                  
-                    </Fade>
+                    
                   </div>
+                  </div>
+
+
+                  <button className='btn2' onClick={onButtonClick} > CV <AiOutlineDownload className='download-icon'/></button></div>
                  
                   
                 </div>
-              
+               
             </div>
+            </Fade>
         </Section>
     )
 }
