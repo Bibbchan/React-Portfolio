@@ -1,6 +1,6 @@
 ![alt text](./public/default_char_notxt.gif)
 # My small portfolio website
-
+Onile on www.schönenberger.dev :)
 I used React and three.js to create my portfolio website.
 
 ![alt text](./public/plant2.svg)
